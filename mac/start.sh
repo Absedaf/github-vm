@@ -25,3 +25,5 @@ brew install --cask ngrok
 #configure ngrok and start it
 ngrok authtoken $1
 ngrok tcp 5900 --region=in &
+sudo systemsetup -getscreensharing
+
