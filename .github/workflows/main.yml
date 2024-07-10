@@ -7,7 +7,7 @@ jobs:
     runs-on: macos-latest
     
     steps:                 
-    - name: Enabling Remote Access
+    - name: Enabling RDP Access
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
       run: |
@@ -19,6 +19,3 @@ jobs:
       run: |
          chmod +x login.sh
          bash login.sh
-         
-    - name: MacOS System running...
-      uses: mxschmitt/action-tmate@v2
